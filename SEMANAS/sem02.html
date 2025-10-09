@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto" id="navNom">
+                <span class="fs-3">Maria Castro</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li><a href="../index.html" class="nav-link px-2 mx-2" id="nav">Inicio</a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Semanas
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+                    <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+                    <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+                    <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+                    <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+                    <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+                    <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="container">
+        <div class="cuerpo px-5">
+            <h2 class="titulo text-center">SEMANA 2: HTML/CSS/BOOSTRAP/TAILWIND</h2>
+            <p class="texto px-5">
+                Durante la segunda semana se realizaron exposiciones centradas en los fundamentos y el desarrollo
+                práctico con HTML y CSS, así como su integración con frameworks modernos como Bootstrap y Tailwind CSS.
+                El objetivo fue comprender cómo se estructura una página web, cómo se define su estilo visual y cómo se
+                pueden aprovechar herramientas que agilizan el diseño responsive.
+            </p>
+
+            <h4 class="texto px-5">Desarrollo teórico</h4>
+            <p class="texto px-5">
+                HTML (HyperText Markup Language):
+                <br>
+                Es el lenguaje base de toda página web. Utiliza etiquetas o “tags” para definir la estructura del
+                contenido, como encabezados, párrafos, imágenes o enlaces.
+            </p>
+
+
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+&lt;h1&gt;Bienvenido a mi sitio web&lt;/h1&gt;
+&lt;p&gt;Este es un ejemplo de un párrafo en HTML&lt;/p&gt;
+&lt;img src="foto.jpg" alt="Ejemplo de imagen"&gt;
+  </code></pre>
+                </div>
+            </div>
+
+            <p class="texto px-5">
+                <strong>CSS (Cascading Style Sheets):</strong>
+                <br>
+                Permite dar formato visual al contenido HTML mediante reglas de estilo (colores, tipografía, márgenes,
+                disposición, etc.).
+            </p>
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2e86de;
+  text-align: center;
+}
+  </code></pre>
+                </div>
+            </div>
+
+            <p class="texto px-5">
+                <strong>Bootstrap:</strong>
+                <br>
+                Framework CSS desarrollado por Twitter que permite crear sitios responsive de forma rápida mediante
+                clases predefinidas.
+                <br>
+                Aquí .btn y .btn-primary aplican automáticamente diseño y color según el tema Bootstrap.
+            </p>
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+&lt;button class="btn btn-primary">Enviar&lt;/button&gt;
+
+  </code></pre>
+                </div>
+            </div>
+
+
+            <p class="texto px-5">
+                <strong>Tailwind CSS:</strong>
+                <br>
+                Framework de utilidades que permite personalizar estilos directamente desde el HTML sin escribir CSS
+                externo.
+            </p>
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+&lt;class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Guardar
+&lt;/button&gt;
+
+  </code></pre>
+                </div>
+            </div>
+
+            <p class="texto px-5">
+                Cada clase define un aspecto visual (color, tamaño, margen, borde, etc.), lo que acelera el diseño y
+                mejora la productividad.
+            </p>
+
+            <br>
+
+            <h4 class="texto px-5">Reflexión:</h4>
+            <p class="texto px-5">
+                Esta semana reforcé la comprensión del frontend y aprendí cómo combinar estructura y estilo para lograr
+                páginas profesionales.
+                Bootstrap y Tailwind me mostraron dos enfoques distintos: uno basado en componentes listos, y otro en
+                personalización total mediante utilidades.
+                Reconocí la importancia de mantener un equilibrio entre simplicidad y eficiencia en el diseño web.
+            </p>
+
+            <h4 class="texto px-5">Referencias:</h4>
+          <ul class="texto px-5 ms-5">
+                <li>
+                    Mozilla Developer Network (MDN). HTML: Lenguaje de marcado de hipertexto.  
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">https://developer.mozilla.org/es/docs/Web/HTML</a>
+                </li>
+                <li>
+                    MDN Web Docs. CSS: Hojas de estilo en cascada.  
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">https://developer.mozilla.org/es/docs/Web/CSS</a>
+                </li>
+                <li>
+                    Bootstrap Official Docs. Get Started with Bootstrap.  
+                    <a href="https://getbootstrap.com/docs/" target="_blank">https://getbootstrap.com/docs/</a>
+                </li>
+                <li>
+                    Tailwind CSS Docs. Utility-First Fundamentals.  
+                    <a href="https://tailwindcss.com/docs" target="_blank">https://tailwindcss.com/docs</a>
+                </li>
+                </ul>
+               </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

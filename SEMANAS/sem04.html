@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto" id="navNom">
+                <span class="fs-3">Maria Castro</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li><a href="../index.html" class="nav-link px-2 mx-2" id="nav">Inicio</a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Semanas
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+                    <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+                    <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+                    <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+                    <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+                    <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+                    <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="cuerpo px-5">
+            <h2 class="titulo text-center">SEMANA 4: JavaScript Basico/Avanzado</h2>
+            <p class="texto px-5">
+                Durante esta semana se realizaron exposiciones centradas en JavaScript, el lenguaje de programación que
+                añade comportamiento dinámico a las páginas web.
+                El objetivo fue entender cómo funciona desde su nivel básico hasta las aplicaciones más avanzadas que
+                permiten manipular elementos del sitio y responder a eventos del usuario.
+            </p>
+
+            <h4 class="texto px-5">JavaScript Básico</h4>
+            <p class="texto px-5">
+                • Sintaxis general: estructura de sentencias, comentarios y punto y coma.
+                <br>
+                • Variables y tipos de datos: var, let, const; tipos primitivos (string, number, boolean, array).
+                <br>
+                • Operadores: aritméticos, de comparación y lógicos.
+                <br>
+                • Condicionales y bucles: control del flujo con if, else, for, while.
+                <br>
+                • Funciones: bloques reutilizables de código para modularidad.
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+function sumar(a, b) {
+  return a + b;
+}
+console.log(sumar(3, 4)); // Resultado: 7
+
+  </code></pre>
+                </div>
+            </div>
+            </p>
+
+            <h4 class="texto px-5">JavaScript Avanzado</h4>
+            <p class="texto px-5">
+                • DOM (Document Object Model): permite acceder y modificar elementos HTML desde el script.
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+function sumar(a, b) {
+  return a + b;
+}
+console.log(sumar(3, 4)); // Resultado: 7
+
+
+  </code></pre>
+                </div>
+            </div>
+            </p>
+
+            <p class="texto px-5">
+                • Eventos: acciones que el usuario realiza y que el programa puede detectar.
+
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+const btn = document.querySelector("#boton");
+btn.addEventListener("click", () => alert("Botón presionado"));
+  </code></pre>
+                </div>
+            </div>
+            </p>
+
+            <p class="texto px-5">
+                • Funciones flecha: una forma más concisa de escribir funciones.
+            <div class="container-fluid m-3">
+                <div class="bg-dark text-light p-3 rounded">
+                    <small class="text-secondary">Código</small>
+                    <pre><code>
+const multiplicar = (x, y) => x * y;
+  </code></pre>
+                </div>
+            </div>
+            </p>
+
+            <p class="texto px-5">
+
+                • Objetos y arreglos: estructuras que permiten agrupar y manipular datos.
+                <br>
+                • Promesas y asincronía: ejecución de tareas que requieren esperar (por ejemplo, cargar datos externos).
+            </p>
+
+            <h4 class="texto px-5">Reflexión:</h4>
+            <p class="texto px-5">
+                Estas prácticas me permitieron entender la importancia de dominar tanto el CSS tradicional como los
+                frameworks modernos como Tailwind, que agilizan el diseño manteniendo buena estructura.
+                Además, reforcé mis habilidades de colaboración y control de versiones usando GitHub, comprendiendo el
+                flujo de trabajo profesional en equipo.
+            </p>
+
+            <h4 class="texto px-5">Referencias:</h4>
+           <ul class="texto px-5 ms-5">
+  <li>
+    Mozilla Developer Network (MDN). JavaScript Guide.  
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript</a>
+  </li>
+  <li>
+    JavaScript.info. El tutorial moderno de JavaScript.  
+    <a href="https://javascript.info" target="_blank">https://javascript.info</a>
+  </li>
+  <li>
+    W3Schools. JavaScript Basics.  
+    <a href="https://www.w3schools.com/js/" target="_blank">https://www.w3schools.com/js/</a>
+  </li>
+</ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

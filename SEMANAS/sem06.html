@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto" id="navNom">
+                <span class="fs-3">Maria Castro</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li><a href="../index.html" class="nav-link px-2 mx-2" id="nav">Inicio</a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Semanas
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+                    <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+                    <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+                    <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+                    <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+                    <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+                    <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="container">
+        <div class="cuerpo px-5">
+            <h2 class="titulo text-center">SEMANA 6: Componentes en react</h2>
+            <p class="texto px-5">
+                Durante la sexta semana se desarrolló la teoría de componentes en React, según la guía del Se explicó
+                cómo React renderiza el DOM utilizando ReactDOM.render() y el concepto de DOM virtual, que mejora el
+                rendimiento al actualizar solo las partes necesarias. <br>
+                Se aprendió a crear componentes de clase y de función, entendiendo que cada uno representa una parte
+                visual o lógica de la aplicación. <br>
+                También se introdujo el uso de JSX, que permite combinar HTML con JavaScript, e incluir variables,
+                expresiones, condicionales y bucles dentro del código. <br>
+                Finalmente, se revisaron las formas de aplicar estilos en React: <br>
+                1. CSS tradicional. <br>
+                2. Módulos CSS (.module.css). <br>
+                3. Estilos en línea mediante objetos JavaScript.
+            </p>
+
+            <h4 class="texto px-5">Ejercicios de laboratorio</h4>
+            <p class="texto px-5">
+                1. Se desarrolló una aplicación en React con siete componentes distribuidos por secciones (encabezado,
+                menú, contenido, formulario, pie, etc.).
+                Se aplicó diseño responsivo con CSS para adaptar la interfaz a distintos dispositivos.
+            </p>
+
+            <div class=" d-flex justify-content-center">
+                <img src="../img/img01Sem06.png" alt="">
+            </div>
+
+            <div class=" d-flex justify-content-center my-3">
+                <img src="../img/img02Sem06.png" alt="">
+            </div>
+
+            <p class="texto px-5">
+                2. Se crearon cuatro componentes anidados, pasando un objeto con datos personales hasta el último
+                componente para mostrarlo en pantalla.
+            </p>
+
+
+            <div class=" d-flex justify-content-center my-3">
+                <img src="../img/img03Sem06.png" alt="">
+            </div>
+
+
+            <p class="texto px-5">
+                3. Se creó dos componentes en donde el componente hijo pasa el color al componente padre.
+            </p>
+
+
+            <div class=" d-flex justify-content-center my-3">
+                <img src="../img/img04Sem06.png" alt="">
+            </div>
+
+            <p class="texto px-5">
+                4. Se desarrolló 3 componentes un componente padre y dos hijos.
+            </p>
+
+
+            <div class=" d-flex justify-content-center my-3">
+                <img src="../img/img05Sem06.png" alt="">
+            </div>
+
+            <p class="texto px-5">
+                5. Se renderizó los datos de 4 personas y se hizo la presentación en una tabla. </p>
+
+
+            <div class=" d-flex justify-content-center my-3">
+                <img src="../img/img06Sem06.png" alt="">
+            </div>
+
+            <h4 class="texto px-5">Reflexión:</h4>
+            <p class="texto px-5">
+                Esta semana me ayudó a comprender cómo React organiza las interfaces por medio de componentes. <br>
+                Entendí que cada parte puede construirse de forma independiente, facilitando el mantenimiento y la
+                escalabilidad de una aplicación web.
+            </p>
+
+            <h4 class="texto px-5">Referencias:</h4>
+           <ul class="texto px-5 ms-5">
+  <li>
+    Suasnabar Terrel, J. Guía de Componentes en React. UNCP, 2025.
+  </li>
+  <li>
+    React Documentation. Your First Component.  
+    <a href="https://react.dev/learn/your-first-component" target="_blank">https://react.dev/learn/your-first-component</a>
+  </li>
+  <li>
+    MDN Web Docs. Introducción a JSX.  
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/JSX" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/JSX</a>
+  </li>
+</ul>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
