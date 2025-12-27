@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 14</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3">
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"
+          id="navNom"
+        >
+          <span class="fs-3">Maria Castro</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li>
+            <a href="../index.html" class="nav-link px-2 mx-2" id="nav"
+              >Inicio</a
+            >
+          </li>
+        </ul>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- BODY -->
+    <div class="container">
+      <div class="cuerpo px-5">
+        <h2 class="titulo text-center">
+          SEMANA 14: Desarrollo Backend con Python, Flask y Jinja2
+        </h2>
+
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-file-earmark-text"></i>
+          Contenido resumido y organizado del documento
+          <b>DesarrolloBackendconPython.pdf</b>
+        </div>
+
+        <!-- INTRO -->
+        <p class="texto px-5">
+          En esta semana se abordó el desarrollo backend utilizando el lenguaje
+          <b>Python</b>, profundizando en su integración con servidores web y
+          frameworks modernos. Se estudió el funcionamiento del servidor
+          <b>Apache HTTP Server</b>, la integración de aplicaciones Python
+          mediante <b>mod_wsgi</b>, los fundamentos del lenguaje Python, las
+          buenas prácticas de codificación (PEP-8) y el desarrollo de
+          aplicaciones web con el framework <b>Flask</b>, empleando
+          <b>Jinja2</b> como motor de plantillas.
+        </p>
+
+        <!-- APACHE -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-hdd-network"></i> Servidor Web Apache HTTP Server
+        </h4>
+
+        <table class="table table-bordered table-striped mx-5">
+          <thead class="table-dark">
+            <tr>
+              <th>Concepto</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apache HTTP Server</td>
+              <td>
+                Servidor web de código abierto encargado de recibir solicitudes
+                HTTP/HTTPS y entregar contenido web al cliente.
+              </td>
+            </tr>
+            <tr>
+              <td>Request / Response</td>
+              <td>
+                Apache recibe una solicitud del navegador y responde con HTML,
+                imágenes u otros recursos.
+              </td>
+            </tr>
+            <tr>
+              <td>Apache Lounge</td>
+              <td>
+                Plataforma que ofrece versiones compiladas de Apache para
+                Windows.
+              </td>
+            </tr>
+            <tr>
+              <td>Configuración</td>
+              <td>
+                Se realiza mediante el archivo <code>httpd.conf</code>, donde se
+                define el puerto, rutas y módulos.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- MOD WSGI -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-plug"></i> Integración Python con Apache: mod_wsgi
+        </h4>
+
+        <p class="texto px-5">
+          <b>mod_wsgi</b> es un módulo que permite ejecutar aplicaciones web
+          escritas en Python directamente dentro del servidor Apache, siguiendo
+          el estándar <b>WSGI (Web Server Gateway Interface)</b>. Gracias a esta
+          integración, frameworks como Flask o Django pueden funcionar sin
+          servidores intermedios adicionales.
+        </p>
+
+        <table class="table table-bordered mx-5">
+          <thead class="table-secondary">
+            <tr>
+              <th>Elemento</th>
+              <th>Función</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>WSGI</td>
+              <td>
+                Interfaz estándar entre servidores web y aplicaciones Python
+              </td>
+            </tr>
+            <tr>
+              <td>LoadModule</td>
+              <td>Carga el módulo mod_wsgi dentro de Apache</td>
+            </tr>
+            <tr>
+              <td>WSGIScriptAlias</td>
+              <td>Define el punto de entrada de la aplicación Python</td>
+            </tr>
+            <tr>
+              <td>&lt;Directory&gt;</td>
+              <td>Otorga permisos de acceso a la aplicación</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- PYTHON -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-code-slash"></i> Lenguaje Python
+        </h4>
+
+        <p class="texto px-5">
+          Python es un lenguaje de programación interpretado, multiparadigma y
+          de tipado dinámico. Su sintaxis clara y legible lo hace ideal para el
+          desarrollo backend, automatización, ciencia de datos y aplicaciones
+          web.
+        </p>
+
+        <table class="table table-bordered mx-5">
+          <thead class="table-dark">
+            <tr>
+              <th>Característica</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Indentación</td>
+              <td>Define los bloques de código (no usa llaves)</td>
+            </tr>
+            <tr>
+              <td>Tipado dinámico</td>
+              <td>No requiere declarar tipos de datos explícitamente</td>
+            </tr>
+            <tr>
+              <td>Multiparadigma</td>
+              <td>Soporta POO, programación funcional e imperativa</td>
+            </tr>
+            <tr>
+              <td>Bytecode</td>
+              <td>
+                El código fuente se transforma en bytecode ejecutado por la VM
+                de Python
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- PEP8 -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-journal-code"></i> Estándares de estilo PEP-8
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Uso de 4 espacios por nivel de indentación</li>
+          <li>Líneas de código con máximo 79 caracteres</li>
+          <li>Variables y funciones en snake_case</li>
+          <li>Clases en PascalCase</li>
+          <li>Importaciones organizadas por bloques</li>
+        </ul>
+
+        <!-- FLASK -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-lightning-charge"></i> Framework Flask
+        </h4>
+
+        <p class="texto px-5">
+          Flask es un <b>microframework</b> de desarrollo web en Python,
+          diseñado para ser ligero, flexible y fácil de extender. Utiliza el
+          patrón <b>MVC</b> y permite definir rutas para manejar solicitudes
+          HTTP, renderizar vistas HTML y gestionar datos enviados por el
+          usuario.
+        </p>
+
+        <table class="table table-bordered mx-5">
+          <thead class="table-secondary">
+            <tr>
+              <th>Concepto</th>
+              <th>Función</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>@app.route</td>
+              <td>Define las rutas de la aplicación</td>
+            </tr>
+            <tr>
+              <td>request</td>
+              <td>Accede a los datos enviados por el cliente</td>
+            </tr>
+            <tr>
+              <td>response</td>
+              <td>Respuesta enviada al navegador</td>
+            </tr>
+            <tr>
+              <td>render_template</td>
+              <td>Renderiza plantillas HTML con Jinja2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- JINJA -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-layout-text-window"></i> Motor de Plantillas Jinja2
+        </h4>
+
+        <p class="texto px-5">
+          Jinja2 permite generar contenido HTML dinámico, separando la lógica
+          del backend de la presentación visual. Facilita la reutilización de
+          código y el mantenimiento de aplicaciones web.
+        </p>
+
+        <table class="table table-bordered mx-5">
+          <thead class="table-dark">
+            <tr>
+              <th>Elemento</th>
+              <th>Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ variable }}</td>
+              <td>Muestra valores dinámicos</td>
+            </tr>
+            <tr>
+              <td>{% if %}</td>
+              <td>Condicionales</td>
+            </tr>
+            <tr>
+              <td>{% for %}</td>
+              <td>Bucles</td>
+            </tr>
+            <tr>
+              <td>{% extends %}</td>
+              <td>Herencia de plantillas</td>
+            </tr>
+            <tr>
+              <td>| filtro</td>
+              <td>Transformación de datos</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- LAB RESUMEN -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-clipboard-check"></i> Laboratorio (resumen breve)
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>POO en Python (clases Persona y Estudiante)</li>
+          <li>Aplicación Flask con formulario HTML</li>
+          <li>Conexión a base de datos MySQL</li>
+          <li>Registro de datos mediante POST</li>
+        </ul>
+
+        <!-- REFLEXION -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-chat-left-quote"></i> Reflexión
+        </h4>
+
+        <p class="texto px-5">
+          Esta semana permitió comprender cómo Python puede integrarse con
+          servidores web tradicionales para construir aplicaciones backend
+          modernas. El uso de Flask y Jinja2 facilita la creación de
+          aplicaciones organizadas, escalables y fáciles de mantener, reforzando
+          la separación entre lógica y presentación.
+        </p>
+
+        <!-- REFERENCIAS -->
+        <h4 class="texto px-5"><i class="bi bi-book"></i> Referencias</h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>DesarrolloBackendconPython.pdf</li>
+          <li>
+            Python:
+            <a href="https://www.python.org/" target="_blank"
+              >https://www.python.org/</a
+            >
+          </li>
+          <li>
+            Flask Framework:
+            <a href="https://flask.palletsprojects.com/" target="_blank"
+              >https://flask.palletsprojects.com/</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

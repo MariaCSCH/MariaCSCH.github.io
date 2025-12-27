@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 9</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3">
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"
+          id="navNom"
+        >
+          <span class="fs-3">Maria Castro</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li>
+            <a href="../index.html" class="nav-link px-2 mx-2" id="nav"
+              >Inicio</a
+            >
+          </li>
+        </ul>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- BODY -->
+    <div class="container">
+      <div class="cuerpo px-5">
+        <div
+          class="d-flex align-items-center justify-content-between flex-wrap gap-2"
+        >
+          <h2 class="titulo text-center flex-grow-1 mb-0">
+            SEMANA 9: Configuración del Entorno Java (OpenJDK) + Apache Tomcat
+          </h2>
+        </div>
+
+        <div class="alert alert-info mt-3" role="alert">
+          <i class="bi bi-file-earmark-text"></i>
+          <b>Fuente:</b> Guía/diapositivas “DesarrolloBackend.pdf” (Semana 9)
+        </div>
+
+        <!-- HERO IMAGES -->
+        <div class="row g-3 my-2">
+          <div class="col-md-6">
+            <figure class="text-center">
+              <img
+                src="../img/img01Sem09.png"
+                class="img-fluid rounded shadow-sm"
+                alt="OpenJDK descargado y ruta de instalación"
+              />
+              <figcaption class="small text-muted mt-2">
+                Evidencia 1: Descarga/ubicación de OpenJDK (carpeta del JDK).
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="text-center">
+              <img
+                src="../img/img02Sem09.png"
+                class="img-fluid rounded shadow-sm"
+                alt="Página de Tomcat funcionando en localhost:8080"
+              />
+              <figcaption class="small text-muted mt-2">
+                Evidencia 2: Tomcat funcionando en
+                <code>http://localhost:8080</code>.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- RESUMEN EN APUNTES -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-journal-text"></i> Información resumida (apuntes)
+        </h4>
+
+        <div class="row g-3 px-4">
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-3">
+                  <i class="bi bi-cpu"></i> Java / OpenJDK
+                </h5>
+                <ul class="mb-0">
+                  <li>
+                    <b>Java</b>: lenguaje base para aplicaciones backend/web
+                    empresariales.
+                  </li>
+                  <li><b>JDK</b>: kit para desarrollo (compila + ejecuta).</li>
+                  <li><b>OpenJDK</b>: implementación libre del JDK.</li>
+                  <li>
+                    Comandos clave:
+                    <ul>
+                      <li><code>java --version</code> (verifica runtime)</li>
+                      <li>
+                        <code>javac --version</code> (verifica compilador)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title mb-3">
+                  <i class="bi bi-hdd-network"></i> Apache Tomcat
+                </h5>
+                <ul class="mb-0">
+                  <li>Servidor/Contenedor para aplicaciones web Java.</li>
+                  <li>
+                    Permite trabajar con <b>JSP</b> y <b>Servlets</b> (Jakarta).
+                  </li>
+                  <li>Escucha por defecto en <b>puerto 8080</b>.</li>
+                  <li>Validación: abrir <code>http://localhost:8080</code>.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLA PRINCIPAL: PASOS -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-list-check"></i> Procedimiento resumido (paso a paso)
+        </h4>
+
+        <div class="table-responsive px-5">
+          <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th style="width: 70px">Paso</th>
+                <th>Actividad</th>
+                <th>Qué verificar (resultado esperado)</th>
+                <th>Evidencia (captura sugerida)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"><b>1</b></td>
+                <td>Descargar y descomprimir <b>OpenJDK</b></td>
+                <td>Carpeta del JDK lista (ej. <code>C:\java\jdk-XX</code>)</td>
+                <td>Captura del explorador mostrando la ruta del JDK</td>
+              </tr>
+              <tr>
+                <td class="text-center"><b>2</b></td>
+                <td>Configurar variables de entorno</td>
+                <td>
+                  <code>JAVA_HOME</code> creado y
+                  <code>%JAVA_HOME%\bin</code> agregado al <code>PATH</code>
+                </td>
+                <td>Captura de “Variables de entorno” (JAVA_HOME y PATH)</td>
+              </tr>
+              <tr>
+                <td class="text-center"><b>3</b></td>
+                <td>Verificar instalación desde consola</td>
+                <td>
+                  CMD/PowerShell responde versiones:
+                  <code>java --version</code> y <code>javac --version</code>
+                </td>
+                <td>Captura de la consola con ambos comandos</td>
+              </tr>
+              <tr>
+                <td class="text-center"><b>4</b></td>
+                <td>Instalar <b>IntelliJ IDEA</b> (IDE)</td>
+                <td>IDE instalado y reconoce el JDK (SDK configurado)</td>
+                <td>
+                  Captura de “Project SDK”/configuración del JDK en el IDE
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center"><b>5</b></td>
+                <td>Instalar <b>Apache Tomcat</b></td>
+                <td>Servicio/servidor listo con puerto configurado (8080)</td>
+                <td>Captura del instalador (opciones/puerto/ruta Java)</td>
+              </tr>
+              <tr>
+                <td class="text-center"><b>6</b></td>
+                <td>Probar Tomcat en navegador</td>
+                <td>
+                  Se visualiza la página de Tomcat en
+                  <code>localhost:8080</code>
+                </td>
+                <td>Captura del navegador mostrando Tomcat funcionando</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CHECKLIST RÁPIDA -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-check2-square"></i> Checklist de verificación (antes
+          de continuar a JSP)
+        </h4>
+
+        <div class="row px-5 g-3">
+          <div class="col-md-6">
+            <div class="card border-success shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="card-title text-success">
+                  <i class="bi bi-shield-check"></i> Listo / OK
+                </h6>
+                <ul class="mb-0">
+                  <li>JAVA_HOME configurado correctamente.</li>
+                  <li>PATH incluye <code>%JAVA_HOME%\bin</code>.</li>
+                  <li>
+                    Comandos <code>java</code> y <code>javac</code> responden
+                    versión.
+                  </li>
+                  <li>Tomcat abre en <code>http://localhost:8080</code>.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card border-warning shadow-sm h-100">
+              <div class="card-body">
+                <h6 class="card-title text-warning">
+                  <i class="bi bi-exclamation-triangle"></i> Errores comunes
+                </h6>
+                <ul class="mb-0">
+                  <li>
+                    <code>'java' no se reconoce</code> → PATH mal configurado.
+                  </li>
+                  <li>Tomcat no abre → puerto ocupado o servicio detenido.</li>
+                  <li>
+                    Tomcat pide Java → ruta del JDK incorrecta en instalación.
+                  </li>
+                  <li>
+                    Versiones distintas → múltiples JDK instalados sin control.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACORDEÓN (ESTUDIO) -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-diagram-3"></i> Relación entre herramientas (Java ↔
+          JDK ↔ IDE ↔ Tomcat)
+        </h4>
+
+        <div class="accordion px-5" id="accSem09">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c1"
+              >
+                ¿Qué aporta cada componente?
+              </button>
+            </h2>
+            <div
+              id="c1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accSem09"
+            >
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li><b>Java</b>: lenguaje y plataforma.</li>
+                  <li>
+                    <b>JDK/OpenJDK</b>: herramientas para desarrollo
+                    (compilación y ejecución).
+                  </li>
+                  <li>
+                    <b>IDE (IntelliJ)</b>: productividad (proyectos,
+                    dependencias, ejecución, depuración).
+                  </li>
+                  <li>
+                    <b>Tomcat</b>: despliegue/ejecución web (JSP/Servlets y
+                    peticiones HTTP).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c2"
+              >
+                ¿Qué evidencia vale más para el cuaderno?
+              </button>
+            </h2>
+            <div
+              id="c2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accSem09"
+            >
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Variables de entorno (JAVA_HOME y PATH).</li>
+                  <li>
+                    Consola con <code>java --version</code> y
+                    <code>javac --version</code>.
+                  </li>
+                  <li>Tomcat corriendo en navegador (localhost:8080).</li>
+                  <li>
+                    Instalación/configuración de Tomcat mostrando selección de
+                    Java.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALERÍA DE IMÁGENES (PLACEHOLDERS) -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-images"></i> Galería de evidencias (pega tus capturas
+          aquí)
+        </h4>
+
+        <div class="row px-5 g-3">
+          <div class="col-md-4">
+            <figure class="text-center">
+              <img
+                src="../img/img03Sem09.png"
+                class="img-fluid rounded shadow-sm"
+                alt="Variables de entorno"
+              />
+              <figcaption class="small text-muted mt-2">
+                Evidencia 3: Variables de entorno (JAVA_HOME y PATH).
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="text-center">
+              <img
+                src="../img/img04Sem09.png"
+                class="img-fluid rounded shadow-sm"
+                alt="CMD con java --version"
+              />
+              <figcaption class="small text-muted mt-2">
+                Evidencia 4: Consola con <code>java --version</code> y
+                <code>javac --version</code>.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="text-center">
+              <img
+                src="../img/img05Sem09.png"
+                class="img-fluid rounded shadow-sm"
+                alt="Instalación Tomcat"
+              />
+              <figcaption class="small text-muted mt-2">
+                Evidencia 5: Instalación de Tomcat (puerto 8080 + ruta de Java).
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- REFLEXIÓN -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-chat-left-quote"></i> Reflexión
+        </h4>
+        <p class="texto px-5">
+          Esta semana confirmé que el backend con Java depende mucho de una
+          buena configuración inicial. Tener OpenJDK correctamente instalado
+          (JAVA_HOME y PATH) evita errores al compilar/ejecutar. Además, Tomcat
+          es clave para pasar de “código Java” a “aplicación web real”, ya que
+          actúa como contenedor para JSP/Servlets y permite probar el sistema
+          localmente antes de avanzar a proyectos más completos.
+        </p>
+
+        <!-- REFERENCIAS -->
+        <h4 class="texto px-5"><i class="bi bi-book"></i> Referencias</h4>
+        <ul class="texto px-5 ms-5">
+          <li>
+            Guía/diapositivas del docente: <b>DesarrolloBackend.pdf</b> (Semana
+            9).
+          </li>
+          <li>
+            OpenJDK:
+            <a href="https://jdk.java.net/" target="_blank"
+              >https://jdk.java.net/</a
+            >
+          </li>
+          <li>
+            Apache Tomcat:
+            <a href="https://tomcat.apache.org/" target="_blank"
+              >https://tomcat.apache.org/</a
+            >
+          </li>
+          <li>
+            IntelliJ IDEA:
+            <a href="https://www.jetbrains.com/idea/" target="_blank"
+              >https://www.jetbrains.com/idea/</a
+            >
+          </li>
+        </ul>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

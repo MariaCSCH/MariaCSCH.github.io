@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 10</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3">
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"
+          id="navNom"
+        >
+          <span class="fs-3">Maria Castro</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li>
+            <a href="../index.html" class="nav-link px-2 mx-2" id="nav"
+              >Inicio</a
+            >
+          </li>
+        </ul>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- BODY -->
+    <div class="container">
+      <div class="cuerpo px-5">
+        <h2 class="titulo text-center">
+          SEMANA 10: JSP, MVC, Maven y Spring Framework
+        </h2>
+
+        <!-- BLOQUE INTRO -->
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-info-circle"></i>
+          Contenido resumido del documento
+          <b>Sem10 DesarrolloBackend JSP2.pdf</b>
+        </div>
+
+        <!-- IMÁGENES PRINCIPALES -->
+        <div class="row g-3 my-3">
+          <div class="col-md-6 text-center">
+            <img
+              src="../img/img01Sem10.webp"
+              class="img-fluid rounded shadow-sm"
+              alt="Flujo de procesamiento JSP"
+            />
+            <p class="small text-muted mt-2">
+              Procesamiento de una página JSP en el servidor
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../img/img02Sem10.png  "
+              class="img-fluid rounded shadow-sm"
+              alt="Arquitectura MVC en Java"
+            />
+            <p class="small text-muted mt-2">
+              Arquitectura MVC aplicada en JSP / Spring
+            </p>
+          </div>
+        </div>
+
+        <!-- TABLA 1: JSP -->
+        <h4 class="texto px-5">
+          <i class="bi bi-file-earmark-code"></i> Jakarta Server Pages (JSP)
+        </h4>
+
+        <div class="table-responsive px-5">
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>Elemento JSP</th>
+                <th>Sintaxis</th>
+                <th>Función</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scriptlet</td>
+                <td><code>&lt;% código Java %&gt;</code></td>
+                <td>Lógica Java dentro del JSP</td>
+              </tr>
+              <tr>
+                <td>Expresión</td>
+                <td><code>&lt;%= expresión %&gt;</code></td>
+                <td>Imprime valores dinámicos</td>
+              </tr>
+              <tr>
+                <td>Declaración</td>
+                <td><code>&lt;%! variables/métodos %&gt;</code></td>
+                <td>Define variables globales</td>
+              </tr>
+              <tr>
+                <td>Directivas</td>
+                <td><code>&lt;%@ page %&gt;</code></td>
+                <td>Configura la página JSP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- TABLA 2: OBJETOS IMPLÍCITOS -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-box"></i> Objetos implícitos JSP
+        </h4>
+
+        <div class="table-responsive px-5">
+          <table class="table table-bordered">
+            <thead class="table-secondary">
+              <tr>
+                <th>Objeto</th>
+                <th>Uso principal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>request</td>
+                <td>Datos enviados por el cliente</td>
+              </tr>
+              <tr>
+                <td>response</td>
+                <td>Respuesta HTTP</td>
+              </tr>
+              <tr>
+                <td>session</td>
+                <td>Datos de sesión del usuario</td>
+              </tr>
+              <tr>
+                <td>out</td>
+                <td>Salida HTML</td>
+              </tr>
+              <tr>
+                <td>application</td>
+                <td>Contexto global</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MVC -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-diagram-3"></i> Patrón MVC en Java
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li><b>Modelo:</b> Maneja los datos (Entidades, JPA)</li>
+          <li><b>Vista:</b> JSP</li>
+          <li><b>Controlador:</b> Servlets / Controllers Spring</li>
+        </ul>
+
+        <!-- MAVEN -->
+        <h4 class="texto px-5 mt-4"><i class="bi bi-boxes"></i> Maven</h4>
+
+        <div class="table-responsive px-5">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Elemento</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>pom.xml</td>
+                <td>Archivo de configuración del proyecto</td>
+              </tr>
+              <tr>
+                <td>Dependencias</td>
+                <td>Bibliotecas del proyecto</td>
+              </tr>
+              <tr>
+                <td>Repositorio</td>
+                <td>Almacena librerías (mvnrepository)</td>
+              </tr>
+              <tr>
+                <td>Comandos</td>
+                <td>
+                  <code>mvn clean</code>, <code>mvn install</code>,
+                  <code>mvn deploy</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- SPRING -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-lightning"></i> Spring Framework y Spring Boot
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Framework para aplicaciones empresariales Java</li>
+          <li>Implementa Inversión de Control (IoC)</li>
+          <li>Inyección de Dependencias (DI)</li>
+          <li>Spring Boot simplifica configuración y despliegue</li>
+        </ul>
+
+        <!-- CHECKLIST -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-check2-square"></i> Checklist de laboratorio
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Proyecto creado en start.spring.io</li>
+          <li>Configuración Maven correcta</li>
+          <li>Modelo, Repository y Controller creados</li>
+          <li>CRUD probado con Postman</li>
+        </ul>
+
+        <!-- IMÁGENES LAB -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-images"></i> Evidencias de laboratorio
+        </h4>
+
+        <div class="row px-5 g-3">
+          <div class="col-md-4 text-center">
+            <img src="../img/img03Sem10.png" class="img-fluid rounded" />
+            <p class="small">Código JSP</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="../img/img04Sem10.png"
+              class="img-fluid rounded"
+            />
+            <p class="small">Paquetes Spring</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="../img/img05Sem10.png" class="img-fluid rounded" />
+            <p class="small">Pruebas en Postman</p>
+          </div>
+        </div>
+
+        <!-- REFLEXIÓN -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-chat-left-quote"></i> Reflexión
+        </h4>
+        <p class="texto px-5">
+          Esta semana permitió comprender cómo se construyen aplicaciones
+          backend estructuradas usando JSP, MVC, Maven y Spring. La separación
+          de capas y el uso de frameworks simplifican el desarrollo,
+          mantenimiento y escalabilidad de aplicaciones web Java.
+        </p>
+
+        <!-- REFERENCIAS -->
+        <h4 class="texto px-5"><i class="bi bi-book"></i> Referencias</h4>
+        <ul class="texto px-5 ms-5">
+          <li>Sem10 DesarrolloBackend JSP2.pdf</li>
+          <li>
+            Jakarta EE:
+            <a href="https://jakarta.ee/" target="_blank"
+              >https://jakarta.ee/</a
+            >
+          </li>
+          <li>
+            Spring Framework:
+            <a href="https://spring.io/" target="_blank">https://spring.io/</a>
+          </li>
+          <li>
+            Maven:
+            <a href="https://maven.apache.org/" target="_blank"
+              >https://maven.apache.org/</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

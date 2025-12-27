@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 11</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3">
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"
+          id="navNom"
+        >
+          <span class="fs-3">Maria Castro</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li>
+            <a href="../index.html" class="nav-link px-2 mx-2" id="nav"
+              >Inicio</a
+            >
+          </li>
+        </ul>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Semanas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sem01.html">Semana 1</a></li>
+            <li><a class="dropdown-item" href="sem02.html">Semana 2</a></li>
+            <li><a class="dropdown-item" href="sem03.html">Semana 3</a></li>
+            <li><a class="dropdown-item" href="sem04.html">Semana 4</a></li>
+            <li><a class="dropdown-item" href="sem05.html">Semana 5</a></li>
+            <li><a class="dropdown-item" href="sem06.html">Semana 6</a></li>
+            <li><a class="dropdown-item" href="sem07.html">Semana 7</a></li>
+            <li><a class="dropdown-item" href="sem09.html">Semana 9</a></li>
+            <li><a class="dropdown-item" href="sem10.html">Semana 10</a></li>
+            <li><a class="dropdown-item" href="sem11.html">Semana 11</a></li>
+            <li><a class="dropdown-item" href="sem12.html">Semana 12</a></li>
+            <li><a class="dropdown-item" href="sem13.html">Semana 13</a></li>
+            <li><a class="dropdown-item" href="sem14.html">Semana 14</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- BODY -->
+    <div class="container">
+      <div class="cuerpo px-5">
+        <h2 class="titulo text-center">
+          SEMANA 12: Revisión de Laboratorio con Java y Spring Boot
+        </h2>
+
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-search"></i>
+          Actividad enfocada en el análisis, comprensión y validación de un
+          laboratorio desarrollado con <b>Spring Boot</b>
+        </div>
+
+        <!-- INTRO -->
+        <p class="texto px-5">
+          En la semana 11 se realizó la
+          <b>revisión integral de un laboratorio</b> desarrollado con
+          <b>Java y Spring Boot</b>. Esta actividad tuvo como objetivo
+          comprender la estructura del proyecto, analizar el flujo de ejecución
+          del backend y reforzar los conceptos vistos en semanas anteriores,
+          tales como arquitectura MVC, controladores REST, configuración de
+          dependencias y pruebas de servicios.
+        </p>
+
+        <!-- OBJETIVO -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-bullseye"></i> Objetivo de la revisión
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Analizar la estructura de un proyecto Spring Boot</li>
+          <li>Comprender el rol de cada paquete y clase</li>
+          <li>Identificar el flujo de una petición HTTP</li>
+          <li>Verificar el correcto funcionamiento del laboratorio</li>
+        </ul>
+
+        <!-- ESTRUCTURA -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-diagram-3"></i> Estructura del proyecto Spring Boot
+        </h4>
+
+        <table class="table table-bordered table-striped mx-5">
+          <thead class="table-dark">
+            <tr>
+              <th>Componente</th>
+              <th>Función dentro del proyecto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Controller</td>
+              <td>
+                Recibe las solicitudes HTTP y define los endpoints del sistema
+              </td>
+            </tr>
+            <tr>
+              <td>Service</td>
+              <td>Contiene la lógica de negocio de la aplicación</td>
+            </tr>
+            <tr>
+              <td>Repository</td>
+              <td>
+                Maneja el acceso a datos y la interacción con la base de datos
+              </td>
+            </tr>
+            <tr>
+              <td>Model / Entity</td>
+              <td>
+                Representa las tablas de la base de datos mediante clases Java
+              </td>
+            </tr>
+            <tr>
+              <td>Application</td>
+              <td>Clase principal que inicia la aplicación Spring Boot</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- CONFIG -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-gear"></i> Configuración del proyecto
+        </h4>
+
+        <p class="texto px-5">
+          Durante la revisión se analizó el archivo
+          <code>application.properties</code>, donde se configuran aspectos
+          clave del sistema como la conexión a la base de datos, el puerto del
+          servidor y el comportamiento del framework.
+        </p>
+
+        <table class="table table-bordered mx-5">
+          <thead class="table-secondary">
+            <tr>
+              <th>Configuración</th>
+              <th>Propósito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>server.port</td>
+              <td>Define el puerto donde se ejecuta la aplicación</td>
+            </tr>
+            <tr>
+              <td>spring.datasource.url</td>
+              <td>URL de conexión a la base de datos</td>
+            </tr>
+            <tr>
+              <td>spring.jpa.hibernate.ddl-auto</td>
+              <td>Controla la creación/actualización de tablas</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- FLUJO -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-arrow-repeat"></i> Flujo de una petición HTTP
+        </h4>
+
+        <ol class="texto px-5 ms-5">
+          <li>El cliente realiza una petición HTTP (GET o POST)</li>
+          <li>El Controller recibe la solicitud</li>
+          <li>El Service procesa la lógica de negocio</li>
+          <li>El Repository accede a la base de datos</li>
+          <li>La respuesta es enviada al cliente en formato JSON</li>
+        </ol>
+
+        <!-- LAB -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-clipboard-check"></i> Revisión del laboratorio
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Validación de endpoints REST</li>
+          <li>Revisión de anotaciones Spring</li>
+          <li>Comprobación de inyección de dependencias</li>
+          <li>Pruebas básicas con navegador o Postman</li>
+        </ul>
+
+        <!-- CHECKLIST -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-check2-square"></i> Checklist de revisión
+        </h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>El proyecto compila sin errores</li>
+          <li>La aplicación levanta correctamente</li>
+          <li>Los endpoints responden correctamente</li>
+          <li>La estructura MVC está bien definida</li>
+        </ul>
+
+        <!-- REFLEXION -->
+        <h4 class="texto px-5 mt-4">
+          <i class="bi bi-chat-left-quote"></i> Reflexión
+        </h4>
+
+        <p class="texto px-5">
+          La revisión del laboratorio permitió reforzar los conceptos clave del
+          desarrollo backend con Spring Boot. Analizar un proyecto funcional
+          ayudó a comprender mejor la arquitectura, el flujo de datos y las
+          buenas prácticas necesarias para construir aplicaciones backend
+          robustas y escalables.
+        </p>
+
+        <!-- REFERENCIAS -->
+        <h4 class="texto px-5"><i class="bi bi-book"></i> Referencias</h4>
+
+        <ul class="texto px-5 ms-5">
+          <li>Guía y laboratorio entregado por el docente</li>
+          <li>
+            Spring Boot Documentation:
+            <a href="https://spring.io/projects/spring-boot" target="_blank"
+              >https://spring.io/projects/spring-boot</a
+            >
+          </li>
+          <li>
+            Java Documentation:
+            <a href="https://docs.oracle.com/en/java/" target="_blank"
+              >https://docs.oracle.com/en/java/</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
